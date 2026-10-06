@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* DEFAULT STYLES*/
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+/*BODY*/ 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16;
+    background-color:#01243a;
+}
+
+/* NAVIGATION HEADER*/
+header{
+    padding: 25px 0;
+    background-color: #fff;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+header logo{
+    color: rgb(4,216,216);
+    font-size: 22px;
+    font-weight: bold;      
+}
+
+header ul{
+    display: flex;
+    gap: 30px;
+}
+header ul li a{
+    font-size: 18px;
+}buttonBACK
+
+header ul li a:hover{
+    color: rgb(4,216,216);
+    
+}
+
+header button {
+    background-color:rgba(4,216,216);
+    padding: 15px  50px;
+    border: 2px solid rgb(4, 216,216);
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.header button:hover {
+    background-color: transparent;
+    color: rgb(4, 216,216);
+}
+
+/*MAIN CONTENT*/
+main{
+    padding: 100px 0;
+}
+
+.hero-texts h1 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.hero-texts h2 {
+    text-align: center;
+    color: #f1f1f1;
+    padding: 20px;
+    font-size: 35px;
+}
+
+.hero-texts p{
+    color: #ccc;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Foods*/
+.foods-wrapper{
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;/*ADD THIS*/
+    justify-content: center;/*ADD THIS*/
+}
+
+.food {
+    background-color: #01304e;/* blue card bg like first one*/
+    border-radius: 20px;
+    overflow: hidden;
+    width: 30%;/*ADD THIS*/
+    min-width: 300px;/*ADD THIS*/
+    text-align: center;/*center everything like the first one*/
+}
+.food img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;/*round top corners*/
+}
+
+.food-content{
+    padding: 15px  15px 15px 15px;   
+    text-align: left; /*this is the key*/          
+}     
+
+.food-content h3{
+    color: orange;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+.food-content p{/*FIXED TYPO - was .foods-content*/
+    padding: 0px;
+    color: #afafaf;
+    margin-bottom: 12px;
+    font-size: 14px;
+    margin: 0 0 8px 0;
+}
+
+.food-content .price{
+    color: orange;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 0 8px 0;
+    text-decoration: line-through;
+}
+
+.food-content .price span {
+    color: #ff8c00;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 4px;
+    margin: 0 0 10px 0;
+}
+
+
+.food-content .old-price {
+    color: #888;
+    text-decoration: line-through;
+    font-size: 14px;
+    margin-left: 4px;
+}
+.food-content button{
+    border: 0;
+    padding: 7px 14px;
+    border-radius: 6px;
+    background-color: orange;/*like first one*/
+    margin-top: 5px;
+    color: #fff;
+    font-weight:600;
+    cursor: pointer;
+    font-size: 14px;
+}
+.food-content button:hover{
+    background-color: darkorange;
+}
+/* FOOTER*/
+footer{
+    background-color: #011a2a;/*darker blue than cards*/ 
+    color: #fff;
+    padding:40px 0 20px 0;
+    margin-top: 50px;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+footer .column{
+    width: 22%;
+    min-width: 200px;
+}
+
+footer .column h4{
+    color: orange;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+footer .column p
+footer .column a{
+    color: #ccc;
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    display: block;
+}
+
+footer .column a:hover {
+    color: #fff;
+}
+
+#footer-hr {
+    border-top: 1px solid #333;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #eee;
+
+}
+
+
+    
+
+    
