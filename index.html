@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Act-Food | Best Restaurant in Freetown</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar">
+        <h2 class="logo">Act-Food</h2>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger"><span></span><span></span><span></span></div>
+      </nav>
+    </header>
+
+    <!-- HOME WITH BACKGROUND IMAGE -->
+    <section id="home" class="hero">
+      <h1>Welcome to Act-Food</h1>
+      <p>Delicious Meals, Delivered Fresh in Freetown</p>
+      <a href="#menu" class="btn">View Menu</a>
+    </section>
+
+    <!-- ABOUT WITH IMAGE -->
+    <section id="about" class="section about">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p>
+            Act-Food is a restaurant dedicated to serving fresh, tasty, and
+            affordable meals. We use local ingredients to bring you the best of
+            Sierra Leonean and international cuisine. Your satisfaction is our
+            recipe.
+          </p>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5"
+          alt="Restaurant"
+        />
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section bg">
+      <h2>Our Services</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>🍽️ Dine In</h3>
+          <p>
+            Enjoy a comfortable and clean environment with family and friends.
+          </p>
+        </div>
+        <div class="card">
+          <h3>📦 Takeaway</h3>
+          <p>Order your food and pick it up fast. No waiting.</p>
+        </div>
+        <div class="card">
+          <h3>🚚 Delivery</h3>
+          <p>We deliver hot meals to your home or office in Freetown.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU WITH IMAGES -->
+    <section id="menu" class="section">
+      <h2>Our Menu</h2>
+      <div class="grid">
+        <div class="card menu-card">
+          <img src="css/img/downljollof.jpeg" alt="Jollof" />
+          <h3>Jollof Rice + Chicken</h3>
+          <p>NLE 60</p>
+        </div>
+        <div class="card menu-card">
+          <img src="css/img/Chicken-Fried-Rice-Product.webp" alt="Fried Rice" />
+          <h3>Fried Rice + Fish</h3>
+          <p>NLE 55</p>
+        </div>
+        <div class="card menu-card">
+          <img src="css/img/grilled chicken and chips.jpeg" alt="Chicken" />
+          <h3>Grilled Chicken + Chips</h3>
+          <p>NLE 70</p>
+        </div>
+        <div class="card menu-card">
+          <img src="css/img/potato leaves and rice.jpeg" alt="Potato Leaves" />
+          <h3>Potato Leaves + Rice</h3>
+          <p>NLE 45</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="section bg">
+      <h2>Latest From Our Blog</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>5 Healthy Eating Tips</h3>
+          <p>Learn how to eat healthy without losing taste.</p>
+        </div>
+        <div class="card">
+          <h3>Weekend Special</h3>
+          <p>This weekend we have BBQ and live music. Don't miss it!</p>
+        </div>
+        <div class="card">
+          <h3>New Chef Alert</h3>
+          <p>Meet Chef Ibrah, our new head chef with 10 years experience.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/xzedddko" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows="5"
+          required
+        ></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        © 2026 Act-Food Restaurant | Freetown, Sierra Leone | +232 76 688309
+      </p>
+    </footer>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>
